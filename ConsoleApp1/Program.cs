@@ -23,18 +23,25 @@ namespace ConsoleApp1
             
         }
 
-        static void samsing()
+        static string samsing()
         {
             Console.WriteLine(15.0/23.0);
+
+            return "huy";
         }
 
         static void Main(string[] args)
         {
-            samsing();
+            Console.Write("Введите свое имя: ");
+            string name = Console.ReadLine();
+            Console.WriteLine($"Привет {name}");
+            string w = samsing();
+
+            Console.WriteLine(w);
 
             Console.WriteLine();
 
-            PrintTable();
+            //PrintTable();
             //double x = 15;
             //double y = 23;
             //Console.WriteLine(x / y);
